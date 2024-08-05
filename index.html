@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="/stayl.css">
+<script>
+      window.onload = function() {
+            const links = document.querySelectorAll('a.open');
+                     links.forEach(link => {
+          if (link.textContent === "Elzero") {
+              window.open(link.href);
+          }
+        });
+      };
+  </script>
+</head>
+<body>
+    <a class="open" href="https://google.com">Google</a>
+    <a class="open" href="https://elzero.org">Elzero</a>
+    <a class="not" href="https://facebook.com">Facebook</a>
+    <a class="linked" href="https://linkedin.com">Elzero</a>
+
+    <div class="our-element">Our Element</div>
+    <p>Paragraph</p>
+      <script src="/ex3.js"></script>
+</body>
+</html>
